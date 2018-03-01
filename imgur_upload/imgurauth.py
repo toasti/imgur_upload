@@ -17,17 +17,6 @@ from webbrowser import open_new
 REDIRECT_URL = 'http://localhost:8080/'
 PORT = 8080
 
-def get_access_token_from_url(url):
-    """
-    Parse the access token from imgur's response
-    Args:
-        uri: the imgur api oauth URI
-    Returns:
-        a string containing the access key 
-    """
-    token = str(urlopen(url).read(), 'utf-8')
-    return token
-    #return token.split('=')[1].split('&')[0]
 
 class HTTPServerHandler(BaseHTTPRequestHandler, object):
 
