@@ -4,11 +4,13 @@ for mac os x: adds a workflow service that allows to right click->service->uploa
 # requirements
 
 - python 2.7; this should be shipped with all recent mac os x versions
-- requests package: install pip with `sudo easy_install pip` and then `sudo pip install requests`
+- requests package for python
 
 # installation
 
-move all files to `~/Library/Services`. `~/Library/` is hidden by default, you can direct a finder window there with `open ~/Library/Services`. the folder structure should look like this:
+First open a terminal and install pip with `sudo easy_install pip` and then install the requests package with `sudo pip install requests`.
+
+Move all files of this repository to `~/Library/Services`. `~/Library/` is hidden by default, you can direct a finder window there with `open ~/Library/Services` in a terminal, or in a finder: in the menu `Go -> Go to folder...`. The folder structure should look like this:
 
 ```
     ~/Library/Services/upload to imgur.workflow
